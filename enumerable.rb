@@ -1,5 +1,4 @@
 module MyEnumerable
-
   def any?
     each do |item|
       return true if yield item
@@ -15,13 +14,10 @@ module MyEnumerable
   end
 
   def filter?
-    arr=[]
+    arr = []
     each do |item|
       arr << item if yield item
     end
-    arr   
+    arr
   end
-  
-end   
-
-
+end
